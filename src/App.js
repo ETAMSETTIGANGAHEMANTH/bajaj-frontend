@@ -11,7 +11,7 @@ function App() {
     e.preventDefault();
     try {
       const json = JSON.parse(jsonInput);
-      const res = await axios.post('http://localhost:8080/bfhl', json);
+      const res = await axios.post('https://bajaj-backenddd-7ca8fe042a55.herokuapp.com/bfhl', json);
       setResponse(res.data);
     } catch (error) {
       console.error(error);
